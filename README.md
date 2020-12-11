@@ -13,7 +13,7 @@ Your .eleventy.js should be updated like this:
 **TODO(samthor): This should be flagged or only run in `--watch` mode.**
 
 ```js
-const eleventyFastDev = require('11ty-fast-dev');
+const eleventyFastDev = require('11ty-fast-dev/patch');
 
 module.exports = eleventyConfig => {
   // We can't set up 11ty-fast-dev here, but instead need to do it later in
@@ -31,7 +31,7 @@ module.exports = eleventyConfig => {
 Add this handler to your web server (this uses Express):
 
 ```js
-const {buildEleventyFastDevHandler} = require('../tools/11ty-fast-dev/handler');
+const {buildEleventyFastDevHandler} = require('11ty-fast-dev/handler');
 
 const staticPaths = ['dist'];  // 11ty writes here by default
 const eleventyFastDevHandler = buildEleventyFastDevHandler(staticPaths);
