@@ -1,0 +1,19 @@
+{
+  "name": "11ty-fast-dev",
+  "version": "0.1.0",
+  "description": "11ty-fast-dev",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samthor/11ty-fast-dev.git"
+  },
+  "author": "Sam Thorogood <sam.thorogood@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/samthor/11ty-fast-dev/issues"
+  },
+  "homepage": "https://github.com/samthor/11ty-fast-dev#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
